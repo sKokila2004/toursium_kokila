@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toursium</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+           <div class="logo">
+             <h1>Home</h1>
+           </div>
+         <div class="menu">
+             <ul>
+                 <li>
+                   <a href="index.html">Home</a>
+                   <a href="login.html">login</a>
+                   <a href="service.html">service</a>
+                   <a href="place.html">place</a>
+                   <a href="discount.html">Discount</a>
+                   <a href="contact.html">contact</a>
+                   <a href="exp.html">Explore</a>
+                 </li>
+             </ul>
+         </div>
+    </div>
+
+    <div class="base"></div>
+    <section>
+        <div class="login">
+        <h1><a href="/home.html" onclick="log()">login</a></h1><br><br>
+        <div class="login-form">
+         <h4>username</h4>
+         <div class="username-input">
+         <i class="fas fa-user"></i>
+         <input type="email" placeholder="enter your mail" id="username">
+         </div>
+         <h4>password</h4>
+         <div class="password-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="type your password">
+         </div>
+         <p class="p">forgot password</p><br>  
+        </div>
+        <button class="login-btn" onclick="func()">
+            LOGIN
+        </button>
+        <div class="alternative-signup">
+            <p>not a member? <span>sign-up</span></p>
+        </div>
+    </div>
+</section>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            if(email=='kokila3@gmail.com' &&  pass == '332004'){
+                alert("login successfully")
+            window.location.assign("exp.html") 
+            }
+          
+            else if(email ==  "" &&   pass == ""){
+                    alert("please enter email and password")
+                }
+                else if(email == ""){
+                    alert("please enter valid email")
+                }
+                else if(pass == ""){
+                    alert("please enter valid password")
+                }
+
+               else if(email != 'koki@gmail.com' &&  pass != '1098'){
+                alert("please enter correct email or password")
+               }
+               else{
+                alert("ivalid")
+               }
+            
+            }
+          
+    </script>
+    <!-- order now -->
+    <body>
+      <script>
+    
+           var mark = prompt("Enter your age");
+        if(mark  >19 && mark <=100){
+            alert(" correct age");
+        }else if(mark >=18 && mark <= 0){
+                alert("eligible to login");
+        }else if( mark <0){
+            alert("enter the correct age");
+        }else{
+            alert("you not eligible");
+        }
+      </script>
+    </body>
+
+<!-- fooder -->
+ 
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Explore the world with us and discover the difference. Contact us today to start planning your dream trip!.</p>
+        <ul>
+          <li><a href="#">24/7 customer services</a></li>
+          <li><a href="#">Enjoy your travel</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">login</a></li>
+          <li><a href="service.html">service</a></li>
+          <li><a href="place.html">place</a></li>
+          <li><a href="discount.html">Discount</a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="exp.html">Explore</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Stay Connected</h3>
+        <ul>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></i> Facebook</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></i> Instagram</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></i> Twitter</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></i> youtupe</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Phone: 555-555-5555<br>Email: [info@toursium.com](mailto:info@toursium.com)</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Travel or Toursium. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <!-- fooder end -->
+</body>
+</html>
+ 

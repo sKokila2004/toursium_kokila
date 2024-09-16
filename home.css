@@ -1,0 +1,334 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+
+.logo{
+    position: relative;
+    margin-top: 10PX;
+    color: navy;
+    font-size: 30px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar #para{
+    color: solid blueviolet;
+    background-color: white;
+    font-size: 25px;
+
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 3vh;
+}
+.menu ul li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: left;
+    justify-content: space-between;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 20px;
+    color: black;
+}
+.menu ul li a{
+   justify-content: space-around;
+   display: flex;
+   padding: 5px 12px;
+   text-decoration: none;
+}
+.menu ul  li a:hover{
+    border-bottom: 4px solid white;
+    transform-origin: 0.4;
+}
+/* koki */
+
+/* koki */
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container1.box1{
+    background-color: white;
+    text-align: center;
+    font-size: xx-large;
+    color: magenta;
+    justify-self: auto;
+    padding: 10px;
+}
+.container1.box11{
+    padding: 100px;
+    border-radius: 400px;
+}
+.container1 .box2{
+    padding: 100px;
+    border-radius: 400px;
+}
+.container .box{
+    border: 2px solid red;
+    background-color: tan;
+
+}
+.container{
+    background-color: blue;
+    border: 2px solid rosybrown;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display :grid;
+    gap: 20px;
+}
+#ss :hover{
+  color:red;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mm img{
+    background-color: blueviolet;
+}
+#yy{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.xx{
+    background-color: green;
+    text-align: right;
+}
+.container{
+    border: 1px solid white;
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    margin: auto;
+    background-color: antiquewhite;
+    color: black;
+}
+.box{
+    border: 2px solid yellow;
+    margin: 30px;
+    padding: 30px;
+    background-color: yellowgreen;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+}  
+.box .box1{
+    border: 2px solid brown;
+    margin: auto;
+    text-align: center;
+    background-color: brown;
+}
+.box2{
+    border: 2px solid yellowgreen;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: greenyellow;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(5px);
+
+}
+#dad{
+    border: 2px blueviolet;
+    background-color: blueviolet;
+}
+
+#mom{
+    border: 2px blueviolet;
+    background-color: blueviolet;
+}
+.pop{
+    border: 2px solid yellowgreen;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: greenyellow;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(5px)
+}
+.box5{
+    border: 2px solid gray;
+    text-align: center;
+    background-color: brown;
+}
+.box6{
+    border: 2px solid gray;
+    text-align: center;
+    background-color: brown;
+
+}
+
+.home{
+    background:url(../kaviya/kkkrrr.jpg333.jpg) no-repeat;
+    background-size: cover;
+    border: 2px solid blanchedalmond;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.home h1{
+    text-align: end;
+}
+
+.home .koki{
+    border: 2px solid gray;
+    width: 32%;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+.koki img{
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
+.koki{
+    width: 300px;
+    height: 500px;
+    display:display;
+    justify-content: space-around;
+    padding:10px;
+}
+.content{
+    background: url(../kaviya/aik.jpg)no-repeat;
+    background-size: cover;
+    border-radius: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-color: black;
+    text-align: center;
+}
+#xx{
+    text-align: center;
+    background: url(../kaviya/nu.jpg)no-repeat;
+    background-size: cover;
+}
+/* card */
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
+}
+/* card end */
+ 
+/* koki */
+
+
+/* koki */
+/* dark moode */
+footer {
+    background:url(moutain.jpeg);
+    background-size: cover;
+    color: black;
+    padding: 2em;
+    text-align: center;
+    }
+    
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+.footer-section {
+    flex-basis: 20%;
+    padding: 1em;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+     padding: 0;
+}
+.footer-section li {
+ margin-bottom: 10px;
+}
+.footer-section a {
+    color: black;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: white;
+}
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background:url(../kaviya/leav.jpg)no-repeat;
+    background-size: cover;
+}
+    
+@media only screen and (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    }
+    .footer-section {
+     flex-basis: 100%;
+     margin-bottom: 20px;
+      }
+    }
+ @media only screen and (max-width: 480px) {
+    .footer-section h3 {
+    font-size: 16px;
+}
+.footer-section ul {
+    font-size: 14px;
+}
+}
+    
+

@@ -1,0 +1,416 @@
+/*  
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+  }
+  .logo{
+    position: relative;
+    margin-top: 10PX;
+    color: navy;
+    font-size: 30px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navbar #para{
+    color: solid blueviolet;
+    background-color: white;
+    font-size: 25px;
+  
+  }
+  .menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 3vh;
+  }
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: left;
+    justify-content: space-between;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 20px;
+    color: black;
+    position: relative;
+  }
+  .menu ul li a{
+   justify-content: space-around;
+   display: flex;
+   padding: 5px 12px;
+   text-decoration: none;
+  }
+  .menu ul  li a:hover{
+    border-bottom: 4px solid white;
+    transform-origin: 0.4;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  } */
+  
+  /* Main content styles */
+  /* main {
+    overflow: hidden; /* Hide any overflowing content */
+  /* } */
+   /* koki */
+   *{
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(image/bg5kkkk.jpg)no-repeat ;
+    background-size: cover;
+  }
+  .navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+  }
+  .logo{
+    position: relative;
+    margin-top: 20PX;
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navbar #para{
+    color: solid blueviolet;
+    background-color: white;
+    font-size: 25px;
+  
+  }
+  .menu ul{
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 50%;
+    list-style: none;
+    padding: 3vh;
+  }
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: left;
+    justify-content: space-between;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 20px;
+    color: white;
+    position: relative;
+  }
+  .menu ul li a{
+   justify-content: space-around;
+   display: flex;
+   padding: 5px 12px;
+   text-decoration: none;
+   color: white;
+  }
+  .menu ul  li a:hover{
+    border-bottom: 4px solid white;
+    transform-origin: 0.4;
+  }
+   /* koki */
+  section {
+    padding:30px;
+    color: #fff;
+  }
+    */
+  /* ... (previously defined styles) ... */
+  
+  /* Main content styles */
+  #places {
+    background-color: #000000;
+    text-align: center;
+    /* padding: 50px 0; */
+  }
+  
+  .category-buttons {
+    margin-bottom: 30px;
+  }
+  
+  .category-btn {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+     transition: background-color 0.3s; 
+  }
+  
+  .category-btn.active {
+    background-color: #ddd;
+  }
+  
+  .places-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .place {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .place img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .place p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  
+  .places-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .place-card {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .place-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .place-card img:hover {
+    transform: scale(1.1);  
+  }
+  .place-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+   
+  
+  
+  
+  
+  .banner-container {
+      position: relative;
+      width: 100%;
+      height:88vh; 
+      overflow: hidden;
+    }
+    
+    .banner-images {
+      position: absolute;
+      display: flex;
+      animation: scrollImages 20s linear infinite; /* Adjust the time as needed */
+    }
+    
+    .banner-images img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    
+    .banner-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    .banner-text p {
+      font-size: 50px;
+      stroke: black;
+    }
+    
+    @keyframes scrollImages {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-200%); } /* Adjust -600% to match the number of images (6 images) */
+    }
+  
+    .cat{
+      padding:20px 20px;
+      background-color: #ffffff;
+    }
+    /* koki review*/
+    
+.review{
+  background: var(--bg);
+  text-align: center;
+  font-size: 30px;
+  /* display: flex;
+  grid-template-columns: 1fr 1fr 1fr; */
+
+}
+
+.review .box-container{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem; */
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.review .box-container .box{
+  border: .1rem solid white ;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--white);
+}
+
+.review .box-container .box .user{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box h3{
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.review .box-container .box .stars i{
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.review .box-container .box p{
+  font-size: 1.5rem;
+  line-height:20px;
+  color: #444;
+  padding-top: 1rem;
+  border-radius: 10px;
+}
+
+/* review end review*/
+
+    /* koki */
+    footer {
+      background:url(imge/kaviya/leav.jpg)no-repeat;
+      background-size: cover;
+      color:white;
+      padding: 2em;
+      text-align: center;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .footer-section {
+      flex-basis: 20%;
+      padding: 1em;
+    }
+    
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .footer-section li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-section a {
+      color:white;
+      text-decoration: none;
+    }
+    
+    .footer-section a:hover {
+      color: black;
+    }
+    
+    .footer-copyright {
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+      background-color:blue;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .footer-section h3 {
+        font-size: 16px;
+      }
+      .footer-section ul {
+        font-size: 14px;
+      }
+    }

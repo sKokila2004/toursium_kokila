@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISM</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.js">
+</head>
+  <body>
+      <div>
+            <div class="navbar">
+               <div class="logo">
+                 <h1> Contact</h1>
+               </div>
+           <div class="menu">
+              <ul>
+                 <li>
+                   <a href="index.html">Home</a>
+                   <a href="login.html">login</a>
+                   <a href="service.html">service</a>
+                   <a href="place.html">place</a>
+                   <a href="discount.html">Discount</a>
+                   <a href="contact.html">contact</a>
+                   <a href="exp.html">Explore</a>
+                 </li>
+               </ul>
+            </div>
+          </div>
+    
+     <section>
+      <h1>contact us</h1>
+      <div class="left-div">
+        <h5> Contact Info</h5>
+        <p>Address : dindigul</p>
+        <p>Email : kokila.com</p>
+        <p>Mobile : 9345360347</p>
+    </div>
+      <div class="contact">
+          <form action="" id="form" class="form">
+              <h2>CONTACT</h2>
+              <div class="form-control">
+                  <label for="username">Name</label>
+                  <input type="text" id="name" placeholder="Enter username"/>
+                  <span style="color: red;"  id="name_error"></span>
+              </div>
+              <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="Enter email"/>
+                  <span  style="color: red;" id="email_error"></span>
+              </div>
+              <div class="form-control">
+                  <label for="address">address</label>
+                  <input type="text" id="address" placeholder="Enter address"/>
+                  <span  style="color: red;" id="address_error"></span>
+              </div>
+               <button type="submit" onclick="sub()">send message</button>
+          </form>
+  </section>
+  <script>
+      const name = document.getElementById('name');
+     const email = document.getElementById('email');
+     const address = document.getElementById('address');
+    
+      const form = document.getElementById('form');
+
+     const name_error = document.getElementById('name_error');
+
+     const email_error = document.getElementById('email_error');
+
+      const address_error = document.getElementById('address_error');
+     
+
+form.addEventListener('submit',(e)=>
+{  
+  var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var status = false;
+  if(name.value === '' || name.value == null)
+      {
+          e.preventDefault();
+          name_error.innerHTML = "Name is required";
+          status = false;
+      }else{
+          name_error.innerHTML = "";
+          status= true;
+      }
+   if(!email.value.match(email_check))
+           {
+            e.preventDefault();
+          email_error.innerHTML = "valid email is required";
+          status = false;
+        }else
+        {
+           email_error.innerHTML = "";
+           status = true;
+        }
+        if(address.value === '' || address.value == null)
+      {
+          e.preventDefault();
+          address_error.innerHTML = "address is required";
+          status = false;
+      }else{
+          address_error.innerHTML = "";
+          status= true;
+      }
+      
+       
+ 
+  if(status == true){
+      alert("submit successfully");
+     
+
+  }
+  else{
+      alert("invalid message")
+  }
+})
+</script>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Explore the world with us and discover the difference. Contact us today to start planning your dream trip!.</p>
+      <ul>
+        <li><a href="#">24/7 customer services</a></li>
+        <li><a href="#">Enjoy your travel</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="service.html">service</a></li>
+        <li><a href="place.html">place</a></li>
+        <li><a href="discount.html">Discount</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><a href="exp.html">Explore</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Stay Connected</h3>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></i> Facebook</a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></i> Instagram</a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></i> Twitter</a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></i> youtupe</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Phone: 555-555-5555<br>Email: [info@toursium.com](mailto:info@toursium.com)</p>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>&copy; 2024 Travel or Toursium. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
